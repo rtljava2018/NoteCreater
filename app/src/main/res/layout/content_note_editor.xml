@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:id="@+id/main_layout"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+    <EditText
+        android:id="@+id/et_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter Title"
+        android:background="@drawable/et_bg_title"
+        android:textColorHint="@color/et_hint"
+        android:textColor="@color/gallery_card_bg"
+        android:textSize="18sp"
+        android:inputType="textCapSentences"
+        android:textStyle="bold"
+        android:imeOptions="actionDone"
+        android:singleLine="true"
+        android:letterSpacing="-0.03"
+        android:lineSpacingExtra="10sp"
+        android:layout_marginTop="15dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginLeft="10dp" />
+    <TextView
+        android:id="@+id/txt_reminder"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="Remind Me"
+        android:layout_gravity="right"
+        android:textSize="16sp"
+        android:drawableLeft="@drawable/ic_baseline_access_alarm_24"
+        android:drawablePadding="5dp"
+        android:textColor="@color/colorBlack"
+        android:letterSpacing="-0.03"
+        android:lineSpacingExtra="10sp"
+        android:visibility="visible"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginLeft="10dp"
+        android:editable="false" />
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="15dp"
+            android:layout_marginRight="5dp"
+            android:layout_marginLeft="5dp"
+            android:background="@drawable/et_bg_msg"
+            android:orientation="vertical">
+            <EditText
+                android:id="@+id/et_msg"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Enter Note"
+                android:background="@null"
+                android:textStyle="normal"
+                android:textColorHint="@color/et_hint"
+                android:textColor="@color/gallery_card_bg"
+                android:textSize="21sp"
+                android:inputType="textCapSentences|textMultiLine"
+                android:imeOptions="actionDone"
+                android:lineSpacingExtra="10sp"
+                />
+        </LinearLayout>
+    </androidx.core.widget.NestedScrollView>
+
+
+
+
+
+</LinearLayout>
